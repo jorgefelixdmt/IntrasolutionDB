@@ -1,0 +1,43 @@
+CREATE TABLE [dbo].[fb_empresa] (
+    [fb_empresa_id]                 NUMERIC (10)    IDENTITY (1, 1) NOT NULL,
+    [codigo]                        NVARCHAR (50)   NULL,
+    [razon_social]                  NVARCHAR (100)  NULL,
+    [representante_legal]           NVARCHAR (100)  NULL,
+    [ruc]                           NVARCHAR (50)   NULL,
+    [fb_empresa_tipo_id]            NUMERIC (10)    NULL,
+    [fb_operacion_tipo_id]          NUMERIC (10)    NULL,
+    [url]                           NVARCHAR (100)  NULL,
+    [email]                         NVARCHAR (100)  NULL,
+    [telefono_1]                    NVARCHAR (50)   NULL,
+    [fax]                           NVARCHAR (50)   NULL,
+    [estado]                        NUMERIC (1)     NULL,
+    [fb_ubigeo_id]                  NUMERIC (10)    NULL,
+    [direccion]                     NVARCHAR (100)  NULL,
+    [created]                       DATETIME        NULL,
+    [created_by]                    NUMERIC (10)    NULL,
+    [updated]                       DATETIME        NULL,
+    [updated_by]                    NUMERIC (10)    NULL,
+    [owner_id]                      NUMERIC (10)    NULL,
+    [valor]                         NUMERIC (20, 5) NULL,
+    [descripcion]                   NVARCHAR (200)  NULL,
+    [dni]                           NVARCHAR (8)    NULL,
+    [movil]                         NVARCHAR (50)   NULL,
+    [telefono_2]                    NVARCHAR (50)   NULL,
+    [imagen]                        NVARCHAR (200)  NULL,
+    [ingeniero_responsable]         NVARCHAR (100)  NULL,
+    [cip]                           NVARCHAR (50)   NULL,
+    [email_gerente_ma]              VARCHAR (250)   NULL,
+    [is_deleted]                    NUMERIC (1)     NULL,
+    [propietario_id]                NUMERIC (10)    NULL,
+    [g_rol_empresa_id]              NUMERIC (10)    NULL,
+    [g_actividad_minera_id]         NUMERIC (10)    NULL,
+    [g_actividad_economica_ciiu_id] NUMERIC (10)    NULL,
+    [id_Carga]                      NUMERIC (10)    NULL,
+    [fb_pais_id]                    NUMERIC (10)    NULL,
+    [flag]                          NUMERIC (10)    NULL,
+    CONSTRAINT [PK_fb_empresa] PRIMARY KEY CLUSTERED ([fb_empresa_id] ASC)
+);
+
+
+GO
+

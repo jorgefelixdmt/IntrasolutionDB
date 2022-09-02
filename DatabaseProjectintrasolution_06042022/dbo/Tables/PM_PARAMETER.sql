@@ -1,0 +1,20 @@
+CREATE TABLE [dbo].[PM_PARAMETER] (
+    [PM_PARAMETER_ID] NUMERIC (10)    IDENTITY (1, 1) NOT NULL,
+    [CODE]            NVARCHAR (100)  NULL,
+    [VALUE]           NVARCHAR (200)  NULL,
+    [DESCRIPTION]     NVARCHAR (MAX)  NULL,
+    [PUBLIC]          NUMERIC (1)     NULL,
+    [IS_DELETED]      NUMERIC (1)     NULL,
+    [CREATED]         DATETIME        NULL,
+    [UPDATED]         DATETIME        NULL,
+    [NAME]            NVARCHAR (100)  NULL,
+    [CONFIG]          NVARCHAR (1000) NULL,
+    [CREATED_BY]      NUMERIC (10)    NULL,
+    [UPDATED_BY]      NUMERIC (10)    NULL,
+    [OWNER_ID]        NUMERIC (10)    NULL,
+    CONSTRAINT [PK_PM_PARAMETER] PRIMARY KEY CLUSTERED ([PM_PARAMETER_ID] ASC)
+);
+
+
+GO
+

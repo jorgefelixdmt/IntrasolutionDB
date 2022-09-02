@@ -1,0 +1,17 @@
+CREATE TABLE [dbo].[SC_STORED_PROCEDURE] (
+    [SC_STORED_PROCEDURE_ID] NUMERIC (10)  IDENTITY (1, 1) NOT NULL,
+    [CODE]                   NVARCHAR (50) NULL,
+    [NAME]                   NVARCHAR (50) NULL,
+    [DESCRIPTION]            VARCHAR (MAX) NULL,
+    [CREATED]                DATETIME      NULL,
+    [UPDATED]                DATETIME      NULL,
+    [IS_DELETED]             NUMERIC (1)   NULL,
+    [CREATED_BY]             NUMERIC (10)  NULL,
+    [UPDATED_BY]             NUMERIC (10)  NULL,
+    [OWNER_ID]               NUMERIC (10)  NULL,
+    CONSTRAINT [PK_SC_STORED_PROCEDURE] PRIMARY KEY CLUSTERED ([SC_STORED_PROCEDURE_ID] ASC)
+);
+
+
+GO
+

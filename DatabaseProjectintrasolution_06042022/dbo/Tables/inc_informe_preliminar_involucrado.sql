@@ -1,0 +1,42 @@
+CREATE TABLE [dbo].[inc_informe_preliminar_involucrado] (
+    [inc_informe_preliminar_involucrado_id] NUMERIC (10)    IDENTITY (1, 1) NOT NULL,
+    [inc_informe_preliminar_id]             NUMERIC (10)    NULL,
+    [inc_tipo_involucrado_id]               NUMERIC (10)    NULL,
+    [g_rol_empresa_id]                      NUMERIC (10)    NULL,
+    [empresa_ruc]                           VARCHAR (20)    NULL,
+    [empresa_razon_social]                  VARCHAR (200)   NULL,
+    [involucrado_codigo]                    VARCHAR (50)    NULL,
+    [involucrado_apellido_pat]              VARCHAR (100)   NULL,
+    [involucrado_apellido_mat]              VARCHAR (100)   NULL,
+    [involucrado_nombre]                    VARCHAR (200)   NULL,
+    [involucrado_nombre_completo]           VARCHAR (400)   NULL,
+    [fb_ocupacion_id]                       NUMERIC (10)    NULL,
+    [ocupacion_nombre]                      VARCHAR (100)   NULL,
+    [inc_grado_instruccion_id]              NUMERIC (10)    NULL,
+    [grado_instruccion_nombre]              VARCHAR (100)   NULL,
+    [edad]                                  NUMERIC (2)     NULL,
+    [procedencia]                           VARCHAR (100)   NULL,
+    [experiencia_uea_aa]                    NUMERIC (2)     NULL,
+    [experiencia_uea_mm]                    NUMERIC (2)     NULL,
+    [experiencia_total_aa]                  NUMERIC (2)     NULL,
+    [experiencia_total_mm]                  NUMERIC (2)     NULL,
+    [inc_categoria_lesion_id]               NUMERIC (10)    NULL,
+    [inc_tipo_descanso_medico_id]           NUMERIC (10)    NULL,
+    [tipo_descanso_medico_nombre]           VARCHAR (200)   NULL,
+    [diagnostico]                           VARCHAR (1000)  NULL,
+    [descanso_medico_probable]              NUMERIC (4)     NULL,
+    [fb_empresa_especializada_id]           NUMERIC (10)    NULL,
+    [inc_tipo_reporte_id]                   NUMERIC (10)    NULL,
+    [remuneracion]                          NUMERIC (10, 2) NULL,
+    [created]                               DATETIME        NULL,
+    [created_by]                            NUMERIC (10)    NULL,
+    [updated]                               DATETIME        NULL,
+    [updated_by]                            NUMERIC (10)    NULL,
+    [owner_id]                              NUMERIC (10)    NULL,
+    [is_deleted]                            NUMERIC (10)    NULL,
+    CONSTRAINT [inc_informe_preliminar_accidentado_id] PRIMARY KEY NONCLUSTERED ([inc_informe_preliminar_involucrado_id] ASC) WITH (ALLOW_PAGE_LOCKS = OFF, ALLOW_ROW_LOCKS = OFF)
+);
+
+
+GO
+

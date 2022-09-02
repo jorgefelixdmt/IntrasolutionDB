@@ -1,0 +1,17 @@
+CREATE TABLE [dbo].[SC_MODULE_TYPE] (
+    [SC_MODULE_TYPE_ID] NUMERIC (10)   IDENTITY (1, 1) NOT NULL,
+    [CODE]              NVARCHAR (50)  NULL,
+    [NAME]              NVARCHAR (100) NULL,
+    [DESCRIPTION]       NVARCHAR (200) NULL,
+    [CREATED]           DATETIME       NULL,
+    [CREATED_BY]        NUMERIC (10)   NULL,
+    [UPDATED]           DATETIME       NULL,
+    [UPDATED_BY]        NUMERIC (10)   NULL,
+    [OWNER_ID]          NUMERIC (10)   NULL,
+    [IS_DELETED]        NUMERIC (1)    NULL,
+    CONSTRAINT [PK_SC_MODULE_TYPE] PRIMARY KEY CLUSTERED ([SC_MODULE_TYPE_ID] ASC)
+);
+
+
+GO
+
